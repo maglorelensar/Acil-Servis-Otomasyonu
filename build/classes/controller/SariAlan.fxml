@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="777.0" prefWidth="1187.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SariAlanController">
+   <children>
+      <Button layoutX="282.0" layoutY="379.0" mnemonicParsing="false" onAction="#btnYGeri" prefHeight="64.0" prefWidth="90.0" textFill="#550cff">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="52.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="icons/yesilOk.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="155.0" fitWidth="155.0" layoutX="393.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="icons/hastaYatagi.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="397.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tc : ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="397.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ad : ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="397.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Yas : ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblTc1" layoutX="425.0" layoutY="257.0" prefHeight="19.0" prefWidth="89.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAd1" layoutX="427.0" layoutY="285.0" prefHeight="19.0" prefWidth="89.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblYas1" layoutX="431.0" layoutY="314.0" prefHeight="19.0" prefWidth="89.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Text layoutX="383.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cinsiyet  : ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblCinsiyet1" layoutX="451.0" layoutY="342.0" prefHeight="19.0" prefWidth="89.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="465.0" layoutY="377.0" mnemonicParsing="false" onAction="#btnCikis1" prefHeight="31.0" prefWidth="63.0" text="Çıkış">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="384.0" layoutY="377.0" mnemonicParsing="false" onAction="#btnSec1" prefHeight="31.0" prefWidth="63.0" text="Seç">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Text fill="#eaff00" layoutX="444.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="155.0" fitWidth="155.0" layoutX="667.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="icons/hastaYatagi.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="671.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tc : ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="671.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ad : ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="671.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Yas : ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblTc2" layoutX="699.0" layoutY="262.0" prefHeight="19.0" prefWidth="89.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAd2" layoutX="701.0" layoutY="290.0" prefHeight="19.0" prefWidth="89.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblYas2" layoutX="705.0" layoutY="319.0" prefHeight="19.0" prefWidth="89.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Text layoutX="657.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cinsiyet  : ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblCinsiyet2" layoutX="725.0" layoutY="347.0" prefHeight="19.0" prefWidth="89.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="739.0" layoutY="379.0" mnemonicParsing="false" onAction="#btnCikis2" prefHeight="31.0" prefWidth="63.0" text="Çıkış">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="658.0" layoutY="379.0" mnemonicParsing="false" onAction="#btnSec2" prefHeight="31.0" prefWidth="63.0" text="Seç">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Text fill="#eaff00" layoutX="721.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="155.0" fitWidth="155.0" layoutX="397.0" layoutY="458.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="icons/hastaYatagi.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="401.0" layoutY="635.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tc : ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="401.0" layoutY="664.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ad : ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="401.0" layoutY="693.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Yas : ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblTc4" layoutX="429.0" layoutY="622.0" prefHeight="19.0" prefWidth="89.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAd4" layoutX="431.0" layoutY="650.0" prefHeight="19.0" prefWidth="89.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblYas4" layoutX="435.0" layoutY="679.0" prefHeight="19.0" prefWidth="89.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Text layoutX="387.0" layoutY="721.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cinsiyet  : ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblCinsiyet4" layoutX="455.0" layoutY="707.0" prefHeight="19.0" prefWidth="89.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="469.0" layoutY="739.0" mnemonicParsing="false" onAction="#btnCikis4" prefHeight="31.0" prefWidth="63.0" text="Çıkış">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="388.0" layoutY="739.0" mnemonicParsing="false" onAction="#btnSec4" prefHeight="31.0" prefWidth="63.0" text="Seç">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Text fill="#eaff00" layoutX="448.0" layoutY="452.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="155.0" fitWidth="155.0" layoutX="667.0" layoutY="463.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="icons/hastaYatagi.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="671.0" layoutY="640.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tc : ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="671.0" layoutY="669.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ad : ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="671.0" layoutY="698.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Yas : ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblTc5" layoutX="699.0" layoutY="627.0" prefHeight="19.0" prefWidth="89.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAd5" layoutX="701.0" layoutY="655.0" prefHeight="19.0" prefWidth="89.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblYas5" layoutX="705.0" layoutY="684.0" prefHeight="19.0" prefWidth="89.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Text layoutX="657.0" layoutY="726.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cinsiyet  : ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblCinsiyet5" layoutX="725.0" layoutY="712.0" prefHeight="19.0" prefWidth="89.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="739.0" layoutY="738.0" mnemonicParsing="false" onAction="#btnCikis5" prefHeight="31.0" prefWidth="63.0" text="Çıkış">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="658.0" layoutY="738.0" mnemonicParsing="false" onAction="#btnSec5" prefHeight="31.0" prefWidth="63.0" text="Seç">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Text fill="#eaff00" layoutX="718.0" layoutY="458.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="155.0" fitWidth="155.0" layoutX="942.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="icons/hastaYatagi.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="946.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tc : ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="946.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ad : ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="946.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Yas : ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblTc3" layoutX="974.0" layoutY="262.0" prefHeight="19.0" prefWidth="89.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAd3" layoutX="976.0" layoutY="290.0" prefHeight="19.0" prefWidth="89.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblYas3" layoutX="980.0" layoutY="319.0" prefHeight="19.0" prefWidth="89.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Text layoutX="932.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cinsiyet  : ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblCinsiyet3" layoutX="1000.0" layoutY="347.0" prefHeight="19.0" prefWidth="89.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="1014.0" layoutY="376.0" mnemonicParsing="false" onAction="#btnCikis3" prefHeight="31.0" prefWidth="63.0" text="Çıkış">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="933.0" layoutY="376.0" mnemonicParsing="false" onAction="#btnSec3" prefHeight="31.0" prefWidth="63.0" text="Seç">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Text fill="#eaff00" layoutX="996.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="155.0" fitWidth="155.0" layoutX="946.0" layoutY="463.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="icons/hastaYatagi.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="950.0" layoutY="640.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tc : ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="950.0" layoutY="669.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ad : ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="950.0" layoutY="698.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Yas : ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblTc6" layoutX="978.0" layoutY="627.0" prefHeight="19.0" prefWidth="89.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAd6" layoutX="980.0" layoutY="655.0" prefHeight="19.0" prefWidth="89.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblYas6" layoutX="984.0" layoutY="684.0" prefHeight="19.0" prefWidth="89.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Text layoutX="936.0" layoutY="726.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cinsiyet  : ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblCinsiyet6" layoutX="1004.0" layoutY="712.0" prefHeight="19.0" prefWidth="89.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="1018.0" layoutY="738.0" mnemonicParsing="false" onAction="#btnCikis5" prefHeight="31.0" prefWidth="63.0" text="Çıkış">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="937.0" layoutY="738.0" mnemonicParsing="false" onAction="#btnSec6" prefHeight="31.0" prefWidth="63.0" text="Seç">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Text fill="#eaff00" layoutX="997.0" layoutY="456.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="184.0" fitWidth="149.0" layoutX="78.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="icons/doktorlar.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="17.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doktor Adı : ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Button layoutX="69.0" layoutY="249.0" mnemonicParsing="false" onAction="#btnMuayeneEt" prefHeight="31.0" prefWidth="114.0" text="Muayene Et">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtDoktor" layoutX="115.0" layoutY="207.0" promptText="Zorunlu" />
+      <ImageView fitHeight="128.0" fitWidth="210.0" layoutX="26.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="icons/erkekHemsire.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="138.0" fitWidth="126.0" layoutX="124.0" layoutY="298.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="icons/bayanHemsire.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="14.0" layoutY="458.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hemşire Adı : ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtHemsire" layoutX="113.0" layoutY="440.0" promptText="Zorunlu" />
+      <Button layoutX="57.0" layoutY="483.0" mnemonicParsing="false" onAction="#btnTalimatYerineGetir" text="Talimatı Yerine Getir">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="69.0" layoutY="526.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="icons/güvenlik.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="26.0" layoutY="704.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Güvenlik Adı : ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtGüvenlik" layoutX="125.0" layoutY="686.0" promptText="Zorunlu" />
+      <Button layoutX="69.0" layoutY="729.0" mnemonicParsing="false" onAction="#btnGöreviYerineGetir" text="Görevi Yerine Getir">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="562.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.YatanHastaController">
+   <children>
+      <Label layoutX="126.0" layoutY="271.0" prefHeight="156.0" prefWidth="155.0" style="-fx-background-color: pink;" />
+      <TableView fx:id="tblview" layoutX="366.0" layoutY="5.0" prefHeight="227.0" prefWidth="291.0" />
+      <Button layoutX="90.0" layoutY="189.0" mnemonicParsing="false" onAction="#btnMuayeneEt" text="Muayene Et">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <RadioButton fx:id="rdbAtesYok" layoutX="213.0" layoutY="279.0" mnemonicParsing="false" text="Yok">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="tgl1" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rdbOksurukYok" layoutX="213.0" layoutY="317.0" mnemonicParsing="false" text="Yok">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="tgl2" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rdbOksurukVar" layoutX="134.0" layoutY="317.0" mnemonicParsing="false" text="Var" toggleGroup="$tgl2">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rdbAtesVar" layoutX="134.0" layoutY="279.0" mnemonicParsing="false" text="Var" toggleGroup="$tgl1">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </RadioButton>
+      <Text layoutX="68.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ateş :" wrappingWidth="49.173828125">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="rdbHalsizlikYok" layoutX="213.0" layoutY="352.0" mnemonicParsing="false" text="Yok">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="tgl3" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rdbHalsizlikVar" layoutX="134.0" layoutY="352.0" mnemonicParsing="false" text="Var" toggleGroup="$tgl3">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rdbNefesDarligiYok" layoutX="213.0" layoutY="391.0" mnemonicParsing="false" text="Yok">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="tgl4" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rdbNefesDarligiVar" layoutX="134.0" layoutY="391.0" mnemonicParsing="false" text="Var" toggleGroup="$tgl4">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </RadioButton>
+      <Text layoutX="36.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Öksürük :" wrappingWidth="92.00000166893005">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="37.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Halsizlik :" wrappingWidth="79.00000166893005">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="2.0" layoutY="409.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nefes Darlığı :" wrappingWidth="121.00000166893005">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Button layoutX="664.0" layoutY="67.0" mnemonicParsing="false" onAction="#btnGoruntulle" prefHeight="25.0" prefWidth="30.0" text="G" textFill="#00f51d">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="664.0" layoutY="115.0" mnemonicParsing="false" onAction="#btnKapat" prefHeight="25.0" prefWidth="30.0" text="X" textFill="RED">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="145.0" fitWidth="251.0" layoutX="11.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="icons/kontrol.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="87.0" layoutY="436.0" mnemonicParsing="false" onAction="#btnMuayeneTamamla" prefHeight="37.0" prefWidth="175.0" text="Muayene Tamamla">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblMuayeneEdilenKisi" layoutX="43.0" layoutY="226.0" prefHeight="31.0" prefWidth="260.0" textFill="#9e0909">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Button layoutX="392.0" layoutY="471.0" mnemonicParsing="false" onAction="#btnTaburcuEt" prefHeight="37.0" prefWidth="240.0" text="TABURCU ET" textFill="#6412d7">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblMuayeneTamamla" layoutX="65.0" layoutY="486.0" prefHeight="44.0" prefWidth="260.0" textFill="#00bc2f">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txtArea" layoutX="412.0" layoutY="252.0" prefHeight="131.0" prefWidth="200.0" />
+      <Button layoutX="425.0" layoutY="409.0" mnemonicParsing="false" onAction="#btnHastaBilgisiGöster" prefHeight="37.0" prefWidth="175.0" text="Hasta Bilgisi Göster">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="312.0" mnemonicParsing="false" prefHeight="593.0" prefWidth="30.0" style="-fx-background-color: black;" />
+      <Button layoutX="12.0" layoutY="544.0" mnemonicParsing="false" onAction="#btnGeri" prefHeight="44.0" prefWidth="86.0">
+         <graphic>
+            <ImageView fitHeight="29.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="icons/yesilOk.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
